@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <nav class="main-menu">
+        <section class="main-menu">
+            <a href="index.html"><img id="logo-voltjv" src="../public/images/logo.png" alt="logo"></a>
+            <div class="main-menu">
+                <ul class="main-menu">
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="ninja_de_l_animus.html">Ninja de l'Animus</a></li>
+                    <li><a href="chasseurs_d_astera.html">Chasseurs d'Astera</a></li>
+                    <li><a href="skilltree.html">SkillTree</a></li>
+                </ul>
+            </div>
+        </section>
+    </nav>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>VoltJV</title>
+        <link rel="stylesheet" href="../style/assistance.css">
+    </head>
+
+    <body>
+        <div class="help-text">
+            <h1 class="help-text">Vous avez besoin d'assistance ?</h1>
+            <p class="help-text">Pour toute question ou demande d'assistance, vous pouvez contacter notre service après-vente qui vous répondra 
+                dans les plus brefs délais pour satisfaire vos questionnements, pour cela, remplissez le formulaire de contact avec votre message. 
+                Veuillez noter que le service client n'est disponible qu'entre 8h et 20h du Lundi au Vendredi hors jours fériés.</p>
+            <p class="help-text">Pour toute demande urgente ou qui nécessite l'intervention d'un de nos techniciens, vous trouverez le numéro 
+                quelque part sur la page, soyez attentifs</p>
+        </div>
+        
+        <h3 class="help-form">Formulaire d'assistance</h3>
+        <div class="help-form">
+            <form class="help-form">
+                <!--<input type="hidden" name="csrf_token"
+                    value="<?= $_SESSION['csrf_token'] ?>">-->
+                <label for="name"><b>Votre nom :</b></label>
+                <input type="text" id="name" class="help-form" name="name"><br>
+                <label for="email"><b>Votre email :</b></label>
+                <input type="email" id="email" class="help-form" name="email"><br>
+                <label for="phone"><b>Votre téléphone :</b></label>
+                <input type="tel" id="phone" class="help-form" name="phone"><br>
+                <label for="message"><b>Votre message :</b></label>
+                <input type="textarea" id="message" class="help-form" name="message"><br>
+                <input type="submit" id="submit-help" class="help-form" value="Confirmer l'envoi">
+            </form>
+        </div>
+
+        <p id="hidden-phone">Ta race je te donne pas mon téléphone</p>
+
+        <div id="submit-overlay" class="submit-overlay">
+            <div class="submit-window" role="dialog" aria-modal="true" aria-labelledby="submit-title">
+                <h3 id="submit-title" class="submit-title">Merci pour votre retour !</h3>
+                <p class="submit-text">Nous reviendrons vers vous très prochainement</p>
+                <button id="submit-confirm" class="submit-confirm">Hourra !</button>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+
+    <script src="../javascript.js"></script>
+
+</html>

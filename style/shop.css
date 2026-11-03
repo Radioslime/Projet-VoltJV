@@ -1,0 +1,298 @@
+/*Import des éléments externes*/
+
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+/* Modifications de toute la page*/
+
+body {
+    background: #f0ffe7;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14vh;
+}
+
+
+/*Modifications du menu nav*/
+
+nav.main-menu {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    background-color: #233329;
+    position: fixed;
+    z-index: 1000;
+    align-items: center;
+    left: 0;
+    top: 0;
+}
+
+section.main-menu {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+div.main-menu {
+    display: flex;
+    width: 80%;
+    justify-content: end;
+    align-items: center;
+}
+
+img#logo-voltjv {
+    max-height: 100%;
+    max-width: 110px;
+}
+
+ul.main-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    width: 80%;
+}
+
+ul.main-menu li {
+    float: right;
+}
+
+ul.main-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Copperplate", fantasy, serif;
+}
+
+ul.main-menu li a:hover {
+    background-color: #16211a;
+}
+
+
+/*Contenu principal*/
+
+section.shop-category {
+    margin-bottom: 30px;
+}
+
+
+/*Grille de produits*/
+
+div.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+article.product-card {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 2px solid #16211a;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+article.product-card:hover {
+    transform: translateY(-5px);
+}
+
+img.img-cd {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    background-color: #233329;
+}
+
+img.img-product {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background-color: #233329;
+}
+
+div.product-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+span.product-badge {
+    font-size: 13px;
+    color: #ffffff;
+    background-color: #3a7915;
+    border-radius: 6px;
+    padding: 2px 8px;
+    vertical-align: middle;
+}
+
+button.buy-button {
+    margin-top: auto;
+    background-color: #62C925;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.4s;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 17px;
+}
+
+button.buy-button:hover {
+    background-color: #3a7915;
+}
+
+
+/*Fenêtre de validation d'achat*/
+
+div.purchase-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+div.purchase-overlay-visible {
+    display: flex;
+}
+
+div.purchase-window {
+    width: 90%;
+    max-width: 450px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-top: 8px solid #62C925;
+    background-color: #f0ffe7;
+}
+
+.purchase-step-hidden {
+    display: none;
+}
+
+input.purchase-quantity {
+    width: 60px;
+    margin-left: 10px;
+    padding: 5px;
+    border: 2px solid #16211a;
+    border-radius: 6px;
+    font-family: "Outfit";
+}
+
+div.purchase-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button.purchase-confirm, button.purchase-cancel {
+    cursor: pointer;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.4s;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 16px;
+}
+
+button.purchase-confirm {
+    background-color: #62C925;
+    color: #ffffff;
+}
+
+button.purchase-confirm:hover {
+    background-color: #3a7915;
+}
+
+button.purchase-cancel {
+    background-color: #233329;
+    color: #ffffff;
+}
+
+button.purchase-cancel:hover {
+    background-color: #16211a;
+}
+
+
+/*Modifications de textes*/
+
+h1 {
+    font-family: "Chakra Petch", sans-serif;
+}
+
+h1.introduction-page-shop {
+    text-align: center;
+    color: white;
+    background-color: #16211a;
+}
+
+h3 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 30px;
+}
+
+h3.shop-section-title {
+    font-family: "Chakra Petch", sans-serif;
+    color: white;
+    text-indent: 30px;
+    background-color: #16211a;
+    border-radius: 10px;
+}
+
+h3.purchase-title {
+    margin-top: 0;
+    font-size: 24px;
+    color: #16211a;
+}
+
+h4.product-title {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 20px;
+    margin: 0 0 8px 0;
+}
+
+label.purchase-text {
+    font-family: "Outfit";
+}
+
+p {
+    font-family: "Outfit";
+}
+
+p.product-description {
+    margin: 0 0 10px 0;
+    text-align: justify;
+}
+
+p.product-price {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #3a7915;
+    margin: 0 0 12px 0;
+}
+
+p.purchase-total {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 20px;
+    color: #3a7915;
+}

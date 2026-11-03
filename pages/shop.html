@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <nav class="main-menu">
+        <section class="main-menu">
+            <a href="index.html"><img id="logo-voltjv" src="../public/images/logo.png" alt="logo"></a>
+            <div class="main-menu">
+                <ul class="main-menu">
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="ninja_de_l_animus.html">Ninja de l'Animus</a></li>
+                    <li><a href="chasseurs_d_astera.html">Chasseurs d'Astera</a></li>
+                    <li><a href="skilltree.html">SkillTree</a></li>
+                </ul>
+            </div>
+        </section>
+    </nav>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>VoltJV</title>
+        <link rel="stylesheet" href="../style/shop.css">
+    </head>
+
+    <body id="shop-page">
+
+        <section class="introduction-page-shop">
+            <h1 class="introduction-page-shop"><b>La boutique VoltJV</b></h1>
+            <p class="introduction-page-shop">Retrouvez ici tous les jeux du studio, en édition boîte ou en version
+                dématérialisée, ainsi qu'une sélection de goodies pour afficher vos couleurs de chasseur, de shinobi ou de graine
+                de l'Arbre-Mère.</p>
+            <p class="introduction-page-shop">Livraison offerte dès 50 € d'achat. Les jeux dématérialisés sont envoyés
+                immédiatement sous forme de clé d'activation.</p>
+        </section>
+
+        <!-- Jeux en boîte -->
+        <section class="shop-category">
+            <h3 class="shop-section-title">Jeux en boîte</h3>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="../public/images/chasseurs-d-astera/chasseurs-d-astera-cd-et-fond.jpg" class="img-cd" alt="Boîte du jeu Chasseurs d'Astera"/>
+                    <div class="product-info">
+                        <h4 class="product-title">Chasseurs d'Astera</h4>
+                        <p class="product-description">Édition boîte PS5. Inclut une carte du continent d'Astera en poster.</p>
+                        <p class="product-price">79,99 €</p>
+                        <button id="chasseurs-d-astera-box" class="buy-button" data-name="Chasseurs d'Astera (édition boîte)" data-price="79.99">Acheter</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="../public/images/ninja-de-l-animus/ninja-de-l-animus-cd-et-fond.jpg" class="img-cd" alt="Boîte du jeu Ninjas de l'Animus"/>
+                    <div class="product-info">
+                        <h4 class="product-title">Ninjas de l'Animus</h4>
+                        <p class="product-description">Édition boîte PS5. Inclut un artbook numérique de Néo-Kyoto.</p>
+                        <p class="product-price">69,99 €</p>
+                        <button id="ninja-de-l-animus-box" class="buy-button" data-name="Ninjas de l'Animus (édition boîte)" data-price="69.99">Acheter</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="../public/images/skilltree/skilltree-cd-et-fond.jpg" class="img-cd" alt="Boîte du jeu SkillTree"/>
+                    <div class="product-info">
+                        <h4 class="product-title">SkillTree <span class="product-badge">Précommande</span></h4>
+                        <p class="product-description">Édition collector PC limitée, avec un autocollant en pixel art.</p>
+                        <p class="product-price">189,99 €</p>
+                        <button id="skilltree-box" class="buy-button" data-name="SkillTree (édition collector, précommande)" data-price="189.99">Précommander</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Jeux dématérialisés -->
+        <section class="shop-category">
+            <h3 class="shop-section-title">Jeux dématérialisés</h3>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="../public/images/chasseurs-d-astera/chasseurs-d-astera-5.jpg" class="img-product" alt="Jaquette numérique de Chasseurs d'Astera"/>
+                    <div class="product-info">
+                        <h4 class="product-title">Chasseurs d'Astera</h4>
+                        <p class="product-description">Clé PC, PS5 ou Xbox Series X|S. Téléchargement immédiat.</p>
+                        <p class="product-price">74,99 €</p>
+                        <button class="buy-button" data-name="Chasseurs d'Astera (dématérialisé)" data-price="74.99">Acheter</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="../public/images/ninja-de-l-animus/ninja-de-l-animus-4.jpg" class="img-product" alt="Jaquette numérique de Ninjas de l'Animus"/>
+                    <div class="product-info">
+                        <h4 class="product-title">Ninjas de l'Animus</h4>
+                        <p class="product-description">Clé PC, PS5 ou Xbox Series X|S. Téléchargement immédiat.</p>
+                        <p class="product-price">64,99 €</p>
+                        <button class="buy-button" data-name="Ninjas de l'Animus (dématérialisé)" data-price="64.99">Acheter</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="../public/images/skilltree/skilltree-5.jpeg" class="img-product" alt="Jaquette numérique de SkillTree"/>
+                    <div class="product-info">
+                        <h4 class="product-title">SkillTree <span class="product-badge">Précommande</span></h4>
+                        <p class="product-description">Clé PC. Envoyée par e-mail le jour de la sortie.</p>
+                        <p class="product-price">2,99 €</p>
+                        <button class="buy-button" data-name="SkillTree (dématérialisé, précommande)" data-price="2.99">Précommander</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Goodies -->
+        <section id="goodies" class="shop-category">
+            <h3 class="shop-section-title">Goodies</h3>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="../public/images/Autre/pyrocorne.jpg" class="img-product" alt="Figurine du monstre Pyrocorne"/>
+                    <div class="product-info">
+                        <h4 class="product-title">Figurine Pyrocorne</h4>
+                        <p class="product-description">Le dragon des forges de Chasseurs d'Astera, 20 cm, peinte à la main.</p>
+                        <p class="product-price">39,99 €</p>
+                        <button class="buy-button" data-name="Figurine Pyrocorne" data-price="39.99">Acheter</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="../public/images/Autre/sweat.jpg" class="img-product" alt="Sweat à capuche du clan Kage-no-Kai"/>
+                    <div class="product-info">
+                        <h4 class="product-title">Sweat Kage-no-Kai</h4>
+                        <p class="product-description">Sweat à capuche noir brodé de l'emblème du clan de Ninjas de l'Animus.</p>
+                        <p class="product-price">44,99 €</p>
+                        <button class="buy-button" data-name="Sweat Kage-no-Kai" data-price="44.99">Acheter</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="../public/images/Autre/peluche.jpg" class="img-product" alt="Peluche de la graine de SkillTree"/>
+                    <div class="product-info">
+                        <h4 class="product-title">Peluche La Graine</h4>
+                        <p class="product-description">Le héros de SkillTree en version toute douce, 25 cm.</p>
+                        <p class="product-price">19,99 €</p>
+                        <button class="buy-button" data-name="Peluche La Graine" data-price="19.99">Acheter</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="../public/images/Autre/mug.jpg" class="img-product" alt="Mug VoltJV"/>
+                    <div class="product-info">
+                        <h4 class="product-title">Mug VoltJV</h4>
+                        <p class="product-description">Mug en céramique au logo du studio, 350 ml.</p>
+                        <p class="product-price">12,99 €</p>
+                        <button class="buy-button" data-name="Mug VoltJV" data-price="12.99">Acheter</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="../public/images/Autre/posters.jpg" class="img-product" alt="Lot de trois posters"/>
+                    <div class="product-info">
+                        <h4 class="product-title">Lot de 3 posters</h4>
+                        <p class="product-description">Un poster par jeu du studio, format A2.</p>
+                        <p class="product-price">24,99 €</p>
+                        <button class="buy-button" data-name="Lot de 3 posters" data-price="24.99">Acheter</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="../public/images/Autre/cartes.jpg" class="img-product" alt="Carte cadeau VoltJV"/>
+                    <div class="product-info">
+                        <h4 class="product-title">Carte cadeau 25 €</h4>
+                        <p class="product-description">À utiliser sur toute la boutique. Envoyée par e-mail.</p>
+                        <p class="product-price">25,00 €</p>
+                        <button class="buy-button" data-name="Carte cadeau 25 €" data-price="25.00">Acheter</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Fenêtre de validation d'achat -->
+        <div id="purchase-overlay" class="purchase-overlay">
+            <div class="purchase-window" role="dialog" aria-modal="true" aria-labelledby="purchase-title">
+                <h3 id="purchase-title" class="purchase-title">Valider votre achat</h3>
+
+                <div id="purchase-step-confirm">
+                    <p class="purchase-text">Article : <b id="purchase-product-name"></b></p>
+                    <p class="purchase-text">Prix unitaire : <b id="purchase-unit-price"></b></p>
+                    <label class="purchase-text" for="purchase-quantity">Quantité :</label>
+                    <input type="number" id="purchase-quantity" class="purchase-quantity" min="1" max="10" value="1">
+                    <p class="purchase-total">Total : <b id="purchase-total-price"></b></p>
+                    <label class="purchase-text" for="purchase-email">Email :</label>
+                    <input type="email" id="email-client" placeholder="Votre email">
+                    <div class="purchase-buttons">
+                        <button id="purchase-cancel" class="purchase-cancel">Annuler</button>
+                        <button id="purchase-confirm" class="purchase-confirm" onclick="purchase_message()">Confirmer l'achat</button>
+                    </div>
+                </div>
+                <div id="purchase-step-success" class="purchase-step-hidden">
+                    <p id="purchase-message"></p>
+                    <div class="purchase-buttons">
+                        <button id="purchase-close" class="purchase-confirm">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+
+    <script src="../javascript.js"></script>
+
+</html>
